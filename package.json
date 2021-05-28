@@ -1,0 +1,23 @@
+{
+  "name": "curso_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testChai": "mocha 'test-chai/**/*.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-spies": "^1.0.0",
+    "chai-spy": "0.0.1",
+    "js.spec": "^1.0.0-23",
+    "js.spec-chai": "^0.1.7",
+    "mocha": "^8.4.0",
+    "sinon": "^11.1.1",
+    "sinon-chai": "^3.7.0"
+  },
+  "dependencies": {}
+}
