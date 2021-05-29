@@ -23,7 +23,7 @@ const should = chai.should()
 describe('yo como usuario de primaria deseo calcular la suma de 2 números', () => {
     //definimos el primer paso para ejecurtar el comportamiento
 
-    it('prueba mock metodos encadenados', async () => {
+    xit('prueba mock metodos encadenados', async () => {
         const mat = {
             suma: (a, b) => {
                 return {
@@ -56,7 +56,7 @@ describe('yo como usuario de primaria deseo calcular la suma de 2 números', () 
         expect(result).to.be.equal(5);
     })
 
-    it("se suman los valores de 2 + 3 y se espera un valor de 5", async () => {
+    xit("se suman los valores de 2 + 3 y se espera un valor de 5", async () => {
 
         const mat = {
             suma: (a, b) => a + b,

@@ -16,7 +16,7 @@ chai.use(sinonChai);
 
 describe("Usar calculadora", function () {
 
-  it("puede llamar la funcion de Suma", () => {
+  xit("puede llamar la funcion de Suma", () => {
 
     const resultado = 5;
 
