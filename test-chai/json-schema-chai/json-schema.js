@@ -29,22 +29,19 @@ const fruitSchema = {
 
 };
 
-const goodApple = {
-    skin: 'thin',
-    colors: ['red', 'green', 'yellow'],
-    taste: 10
-  };
-const badApple = {
-    colors: ['brown'],
-    taste: 0,
-    worms: 2
-};
+
+
 
 
 //definimos comportamiento del test
 describe('yo como usuario quiero validar la respuesta de una API', () => {
     
     it("puedo validar el objeto goodApple con el schema fruitSchema", () => {
+        const goodApple = {
+            skin: 'thin',
+            colors: ['red', 'green', 'yellow'],
+            taste: 10
+          };
         //bdd style
         expect(goodApple).to.be.jsonSchema(fruitSchema);
         
@@ -55,6 +52,11 @@ describe('yo como usuario quiero validar la respuesta de una API', () => {
     });
 
     it("puedo validar el objeto badApple con el schema fruitSchema", () => {
+        const badApple = {
+            colors: ['brown'],
+            taste: 0,
+            worms: 2
+        };
         //bdd style
         expect(badApple).to.not.be.jsonSchema(fruitSchema);      
         badApple.should.not.be.jsonSchema(fruitSchema);
