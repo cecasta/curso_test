@@ -27,7 +27,14 @@
     "js.spec-chai": "^0.1.7",
     "mocha": "^8.4.0",
     "sinon": "^11.1.1",
-    "sinon-chai": "^3.7.0"
+    "sinon-chai": "^3.7.0",
+    "mockserver": "^3.1.1",
+    "chai-fetch": "^0.3.1",
+    "http-server-mock": "^0.2.1",
+    "graphql-tools": "^7.0.5",
+    "chai-as-promised": "^7.1.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
