@@ -36,7 +36,7 @@ const fruitSchema = {
 //definimos comportamiento del test
 describe('yo como usuario quiero validar la respuesta de una API', () => {
     
-    xit("puedo validar el objeto goodApple con el schema fruitSchema", () => {
+    it("puedo validar el objeto goodApple con el schema fruitSchema", () => {
         const goodApple = {
             skin: 'thin',
             colors: ['red', 'green', 'yellow'],
@@ -51,7 +51,7 @@ describe('yo como usuario quiero validar la respuesta de una API', () => {
         assert.jsonSchema(goodApple, fruitSchema);
     });
 
-    xit("puedo validar el objeto badApple con el schema fruitSchema", () => {
+    it("puedo validar el objeto badApple con el schema fruitSchema", () => {
         const badApple = {
             colors: ['brown'],
             taste: 0,

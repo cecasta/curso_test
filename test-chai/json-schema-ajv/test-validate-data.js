@@ -31,12 +31,12 @@ describe("El objeto manzana tiene los atributos acordes con el esquema de manzan
         },
     };
 
-    xit("El objeto 'apple' cumple con el esquema de manzana.", function () {
+    it("El objeto 'apple' cumple con el esquema de manzana.", function () {
         expect(apple).to.be.jsonSchema(schema, "custom flag");
         assert.jsonSchema(apple, schema, "custom flag");
     });
 
-    xit("El objeto 'car' no cumple con el esquema de manzana.", function () {
+    it("El objeto 'car' no cumple con el esquema de manzana.", function () {
         expect(car).to.not.be.jsonSchema(schema, "custom flag");
         assert.notJsonSchema(car, schema, "custom flag");
     });

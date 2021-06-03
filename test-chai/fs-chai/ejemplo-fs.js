@@ -4,35 +4,35 @@ chai.use(require('chai-json-schema'));
 
 describe('set-pruebas-plugin-fs', () => {
 
-    xit(`dado una ruta en filesystem
+    it(`dado una ruta en filesystem
     cuando se tiene un directorio
     entonces la validación isDirectory debe arrojar un resultado exitoso`, () => {
         const path = './archivos';
         chai.assert.isDirectory(path);
     });
 
-    xit(`dado una ruta en filesystem
+    it(`dado una ruta en filesystem
     cuando se tiene un directorio con archivos
     entonces la validación notIsEmptyDirectory debe arrojar un resultado exitoso`, () => {
         const path = './archivos';
         chai.assert.notIsEmptyDirectory(path);
     });
 
-    xit(`dado una ruta en filesystem
+    it(`dado una ruta en filesystem
     cuando se tiene un archivo con contenido
     entonces la validación notIsEmptyFile debe arrojar un resultado exitoso`, () => {
         const path = './archivos/archivo-json.json';
         chai.assert.notIsEmptyFile(path);
     });
 
-    xit(`dado una ruta en filesystem
+    it(`dado una ruta en filesystem
     cuando se tiene un archivo con un json
     entonces la validación jsonFile debe arrojar un resultado exitoso`, () => {
         const path = './archivos/archivo-json2.json';
         chai.assert.jsonFile(path);
     });
 
-    xit(`dado una ruta en filesystem
+    it(`dado una ruta en filesystem
     cuando se tiene un archivo con un json que tiene un esquema definido y el contenido del archivo cumple con dicho esquema
     entonces la validación jsonSchemaFile debe arrojar un resultado exitoso`, () => {
         const esquema = {
